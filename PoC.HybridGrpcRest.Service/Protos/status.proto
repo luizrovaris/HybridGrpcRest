@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "PoC.HybridGrpcRest.Protos.Service";
+package status.v1;
+
+service Status{
+	rpc GetStatus (StatusRequest) returns (StatusResponse);
+}
+
+message StatusRequest {
+	int32 StatusCode = 1;
+}
+
+message StatusResponse {
+	int32 StatusCode = 1;
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoC.HybridGrpcRest.Service", "PoC.HybridGrpcRest.Service\PoC.HybridGrpcRest.Service.csproj", "{F7DB24FA-3355-4B34-9434-63AA1A0AAFDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PoC.HybridGrpcRest.Consumer", "PoC.HybridGrpcRest.Consumer\PoC.HybridGrpcRest.Consumer.csproj", "{E3E173B5-B780-4039-BAEE-43BE0EAA97E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7DB24FA-3355-4B34-9434-63AA1A0AAFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DB24FA-3355-4B34-9434-63AA1A0AAFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DB24FA-3355-4B34-9434-63AA1A0AAFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DB24FA-3355-4B34-9434-63AA1A0AAFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E173B5-B780-4039-BAEE-43BE0EAA97E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E173B5-B780-4039-BAEE-43BE0EAA97E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E173B5-B780-4039-BAEE-43BE0EAA97E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E173B5-B780-4039-BAEE-43BE0EAA97E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D553F5BA-D702-4DF6-8C28-3B7D00EA6301}
+	EndGlobalSection
+EndGlobal
