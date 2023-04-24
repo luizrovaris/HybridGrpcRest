@@ -22,7 +22,7 @@ namespace PoC.HybridGrpcRest.Consumer.Controllers
 
             if (resp.IsSuccessStatusCode)
             {
-                return Ok();
+                return Ok(resp.StatusCode);
             }
             else
             {
@@ -39,7 +39,7 @@ namespace PoC.HybridGrpcRest.Consumer.Controllers
 
             if (reply.StatusCode >= 200 && reply.StatusCode <= 299)
             {
-                return Ok();
+                return Ok(reply.StatusCode);
             }
             else
             {

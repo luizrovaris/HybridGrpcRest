@@ -12,18 +12,20 @@ namespace PoC.HybridGrpcRest.Service.Services
     {
         public override Task<Protos.Service.StatusResponse> GetStatus(Protos.Service.StatusRequest status, ServerCallContext context)
         {
-            StatusResponse response = GetStatus(new StatusRequest() { StatusCode = status.StatusCode } ).Result;
+            StatusResponse response = GetStatus(new StatusRequest() { StatusCode = status.StatusCode }).Result;
+
             return Task.FromResult(new Protos.Service.StatusResponse()
             {
                 StatusCode = response.StatusCode
-            }); ;
+            });
         }
 
         public Task<StatusResponse> GetStatus(StatusRequest status)
         {
+            int statusCode = status.StatusCode + 10;
             return Task.FromResult(new StatusResponse()
             {
-                StatusCode = status.StatusCode
+                StatusCode = statusCode
             });
         }
     }
