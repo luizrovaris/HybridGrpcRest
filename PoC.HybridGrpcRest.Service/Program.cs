@@ -11,7 +11,7 @@ builder.Services.AddGrpc();
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
     serverOptions.ListenAnyIP(5001, listenOptions => listenOptions.Protocols = HttpProtocols.Http1);
-    serverOptions.ListenAnyIP(5002, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
+    serverOptions.ListenAnyIP(8585, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
 });
 
 //Services
